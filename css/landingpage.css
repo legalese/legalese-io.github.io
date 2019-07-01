@@ -1024,6 +1024,10 @@ button.close {
 
 .table-header-fixed {
     background-color: white;
+    border-left: 1px solid white !important;
+    border-right: 1px solid white !important;
+    border-top: 1px solid white !important;
+    border-bottom: 1px solid white !important;
 }
 
 .btn-horizontal-padding {
@@ -1065,8 +1069,9 @@ button.close {
 
 .subscription-box-margins {
     padding: 2px;
-    margin: 5px;
+    margin: 0 auto;
     width: 150px;
+    max-width: 100%;
 }
 
 .subscription-box-margins-large {
@@ -1121,6 +1126,8 @@ td {
     vertical-align: middle !important
 }
 
-.table > thead > tr > th {
-    border-bottom: 1px solid #ddd !important
+table.floatThead-table {
+    border-top: none !important;
+    border-bottom: none !important;
+    background-color: #FFF;
 }
