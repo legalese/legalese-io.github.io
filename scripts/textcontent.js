@@ -2,12 +2,10 @@
 
 $(window).scroll(function() {
   if ($(this).scrollTop() >= $("#top-c").height()) {
-    console.log('hi noting top-c')
-    console.log($('#return-to-top'))
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
+    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+  } else {
+    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+  }
 });
 
 $('#return-to-top').click(function() {      // When arrow is clicked
@@ -68,6 +66,16 @@ if ($(window).width() > 768) {
     }
   })
 }
+
+$(window).resize(function() {
+  if ($(window).width() > 767) {
+    $("#magic-shift-toggle-bottom").hide();
+    $("#magic-shift-toggle").show()
+  } else {
+    $("#magic-shift-toggle").hide();
+    $("#magic-shift-toggle-bottom").show()
+  }
+})
 
 // downarrow click
 
